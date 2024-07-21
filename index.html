@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Personal Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <!-- Menu -->
+        <nav>
+            <div class="wrapper">
+                <div class="logo"><img src="image/logo.jpg" alt="Logo"></div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#Resume">Resume</a></li>
+                        <li><a href="#Blog">Blog Pribadi</a></li>
+                        <li><a href="#Portofolio">Portofolio</a></li>
+                        <li><a href="#informasi">Informasi</a></li>
+                        <li><a href="#galeri">Galeri</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <script type="text/javascript">
+            const menuItems = document.querySelectorAll('nav a');
+            menuItems.forEach(item => {
+                item.addEventListener('mouseover', () => {
+                    item.style.transition = 'all 0.2s'; 
+                    item.style.color = 'blue';
+                    item.style.fontSize = '1.1em';
+                    item.style.opacity = '1';
+                });
+            
+                item.addEventListener('mouseout', () => {
+                    item.style.transition = 'all 0.1s';
+                    item.style.color = 'white';
+                    item.style.fontSize = '1em';
+                    item.style.opacity = '1';
+                });
+            });
+            </script>
+
+        <!-- Hero / text -->
+        <header>
+            <div class="header-opacity"></div>
+            <div class="header-text">
+                <h3>Selamat Datang Di Personal Website</h3>
+                <p>Ribal Hardiansyah</p>
+                <h5>UAS Praktikum Website</h5>
+                <p>Mulailah Kuasai Program Database Sekarang Juga!!!</p>
+            </div>
+        </header>
+
+        <!-- Statistic -->
+        <section id="statistic">
+            <div class="wrapper">
+                <div>
+                    <p><i class="fa-solid fa-web-awesome"></i>80%</p>
+                    <small>Web Design</small>
+                </div>
+                <div>
+                    <p><i class="fa-solid fa-project-diagram"></i>75%</p>
+                    <small>Database Projects</small>
+                </div>
+                <div>
+                    <p><i class="fa-solid fa-users"></i>7k+</p>
+                    <small>Clients Served</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- Support System -->
+        <section id="Support-System">
+            <div class="wrapper">
+                <h4>Support <span>System</span></h4>
+                <p>Pembuatan Website ini di support oleh:</p>
+
+                <div class="grid">
+                    <div class="item">
+                        <img src="image/vsc.png" alt="Visual Studio Code">
+                        <div class="item-detail">
+                            <p>Visual Studio Code: Editor kode ringan, cepat, dan canggih.</p>
+                            <div>
+                                <small><i class="fa-solid fa-person"></i>14 juta Pengguna</small>
+                                <a href="#" class="button"><i class="fa-solid fa-download"></i>Install</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="image/html.png" alt="HTML">
+                        <div class="item-detail">
+                            <p>HTML: Bahasa sistem yang mudah dipelajari, dan perlu untuk pembuatan web.</p>
+                            <div>
+                                <small><i class="fa-solid fa-person"></i>190 juta Pengguna</small>
+                                <a href="#" class="button"><i class="fa-solid fa-download"></i>Install</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="image/xampp.png" alt="XAMPP">
+                        <div class="item-detail">
+                            <p>XAMPP: Solusi lengkap, mudah digunakan, dan perlu untuk pengembangan dan pengujian web lokal.</p>
+                            <div>
+                                <small><i class="fa-solid fa-person"></i>30 juta Pengguna</small>
+                                <a href="#" class="button"><i class="fa-solid fa-download"></i>Install</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume -->
+        <section id="Resume">
+            <div class="wrapper">
+                <h4>Resume <span>Saya</span></h4>
+                <p>Dihalaman ini adalah dokumen yang merangkum latar belakang pendidikan Web Design:</p>
+            </div>
+
+            <div class="container">
+                <div class="item">
+                    <img src="image/book.png" alt="Pendidikan">
+                    <div class="item-detail">
+                        <p>Pendidikan</p>
+                    </div>
+                    <ol class="Resume-list">
+                        <li class="Resume-item">
+                            <h4>MTS Negeri 1 Andalan Pekanbaru</h4>
+                            <span>2017 - 2019</span>
+                            <p class="Resume-text">
+                                "Sekolah di MTs Negeri 1 Andalan Pekanbaru memberikan pendidikan berkualitas dan pengalaman berharga."
+                            </p>
+                        </li>
+
+                        <li class="Resume-item">
+                            <h4>SMA Negeri 8 Pekanbaru</h4>
+                            <span>2019 - 2022</span>
+                            <p class="Resume-text">
+                                "SMA Negeri 8 Pekanbaru membentuk siswa cerdas dengan pendidikan dan keterampilan unggul."
+                            </p>
+                        </li>
+
+                        <li class="Resume-item">
+                            <h4>Universitas Muhammadiyah Riau</h4>
+                            <span>2022 - 2024</span>
+                            <p class="Resume-text">
+                                "Universitas Muhammadiyah Riau mencetak lulusan berkualitas dengan pendidikan inovatif dan berkarakter."
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+                <div class="item">
+                    <img src="image/book.png" alt="Pengalaman">
+                    <div class="item-detail">
+                        <p>Pengalaman</p>
+                        <ol class="Resume-list">
+                            <li class="Resume-item">
+                                <span>Web Developer</span>
+                                <p class="Resume-text">
+                                    Tiga Serangkai Tech, Jakarta<br>
+                                    Januari 2022 - Sekarang<br>
+                                    Merancang, mengembangkan, dan memelihara situs web responsif menggunakan HTML, CSS, dan JavaScript.
+                                </p>
+                            </li>
+                            <li class="Resume-item">
+                                <span>Junior Web Developer</span>
+                                <p class="Resume-text">
+                                    Apotek Raja, Bandung<br>
+                                    Juni 2020 - Desember 2021<br>
+                                    Mengembangkan aplikasi web menggunakan framework seperti React dan Angular.<br>
+                                    Membantu dalam perancangan dan pengembangan database menggunakan MySQL dan MariaDB.
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Pribadi-->
+
+        <section id="Blog">
+            <div class="wrapper">
+                <h4>Blog</h4>
+                <p>Dihalaman ini adalah  platform untuk berbagi pengalaman, pemikiran, opini, atau artikel tentang pemprograman Website:</p>
+            </div>
+
+            <main>
+                <section id="articles">
+                    <h2>Pengalaman Terkini</h2>
+                    <article>
+                        <h3>DataBase</h3>
+                        <p><strong>Penulis:</strong> RH</p>
+                        <p>"Selama perjalanan belajar tentang database, saya menguasai berbagai teknik pengelolaan data mulai dari perancangan skema yang efisien hingga optimasi kueri SQL, yang membantu saya memahami bagaimana menyimpan, mengelola, dan mengambil informasi secara efektif untuk aplikasi berbasis web."</p>
+                    </article>
+                    <article>
+                        <h3>Development Website</h3>
+                        <p><strong>Penulis:</strong> AR</p>
+                        <p>"Terkait dengan pengembangan website, saya telah melalui proses dari perancangan antarmuka pengguna yang intuitif hingga implementasi fitur-fitur dinamis menggunakan HTML, CSS, dan JavaScript, serta mengintegrasikan backend dengan database untuk menciptakan pengalaman pengguna yang mulus dan interaktif."</p>
+                    </article>
+                    <article>
+                        <h3>CRUD (Create, Read, Update, Delete) </h3>
+                        <p><strong>Penulis:</strong> FKA</p>
+                        <p>"Saya telah mempelajari implementasi operasi CRUD (Create, Read, Update, Delete) dalam pengembangan aplikasi web, menguasai teknik-teknik dasar dalam menyimpan, menampilkan, memperbarui, dan menghapus data menggunakan database SQL dan berbagai framework backend."</p>
+                    </article>
+                    <!-- Tambahkan artikel lainnya di sini -->
+                </section>
+            </main>
+        </section>
+
+        <!-- Portofolio-->
+        <section id="Portofolio">
+            <div class="wrapper">
+                <h4>Portofolio <span></h4>
+                <p>Dihalaman ini adalah beberapa rangkuman web design:</p>
+            </div>
+                <ul class="project-list">
+
+                    <li class="project-item active" data-filter-item data-category="web development">
+                        <a href="#">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+                                <img src="image/project-1.jpg" alt="Finance" loading="lazy">
+                            </figure>
+                            <h3 class="project-title">Finance</h3>
+                            <p class="project-category">Web development</p>
+                        </a>
+                    </li>
+                
+                    <li class="project-item active" data-filter-item data-category="web development">
+                        <a href="#">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+                                <img src="image/project-2.png" alt="Orizon" loading="lazy">
+                            </figure>
+                            <h3 class="project-title">Database</h3>
+                            <p class="project-category">Web development</p>
+                        </a>
+                    </li>
+                
+                    <li class="project-item active" data-filter-item data-category="web design">
+                        <a href="#">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+                                <img src="image/project-3.jpg" alt="Fundo" loading="lazy">
+                            </figure>
+                            <h3 class="project-title">Desainer Arsitektur Web</h3>
+                            <p class="project-category">Web design</p>
+                        </a>
+                    </li>
+                
+                    <li class="project-item active" data-filter-item data-category="applications">
+                        <a href="#">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+                                <img src="image/project-4.png" alt="Brawlhalla" loading="lazy">
+                            </figure>
+                            <h3 class="project-title">Developer Game</h3>
+                            <p class="project-category">Applications</p>
+                        </a>
+                    </li>
+                
+                    <li class="project-item active" data-filter-item data-category="web design">
+                        <a href="#">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+                                <img src="image/project-5.png" alt="DSM" loading="lazy">
+                            </figure>
+                            <h3 class="project-title">Design Structure Matrix</h3>
+                            <p class="project-category">Web design</p>
+                        </a>
+                    </li>
+                
+                    <li class="project-item active" data-filter-item data-category="web design">
+                        <a href="#">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+                                <img src="image/project-6.png" alt="MetaSpark" loading="lazy">
+                            </figure>
+                            <h3 class="project-title">Data Security Web and Applications </h3>
+                            <p class="project-category">Web design</p>
+                        </a>
+                    </li>
+                
+                    <li class="project-item active" data-filter-item data-category="web development">
+                        <a href="#">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+                                <img src="image/project-7.png" alt="Summary" loading="lazy">
+                            </figure>
+                            <h3 class="project-title">Summary Website</h3>
+                            <p class="project-category">Web development</p>
+                        </a>
+                    </li>
+                
+                    <li class="project-item active" data-filter-item data-category="applications">
+                        <a href="#">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+                                <img src="image/project-8.jpg" alt="Task Manager" loading="lazy">
+                            </figure>
+                            <h3 class="project-title">Task Manager Applications</h3>
+                            <p class="project-category">Applications</p>
+                        </a>
+                    </li>
+                
+                    <li class="project-item active" data-filter-item data-category="web development">
+                        <a href="#">
+                            <figure class="project-img">
+                                <div class="project-item-icon-box">
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </div>
+                                <img src="image/project-9.png" alt="Arrival" loading="lazy">
+                            </figure>
+                            <h3 class="project-title">Arrival Software and tools</h3>
+                            <p class="project-category">Web development</p>
+                        </a>
+                    </li>
+                
+                </ul>
+                
+        </section>
+
+        <!-- Informasi-->
+        <section id="informasi">
+            <div class="wrapper">
+                <h4>Tentang <span>Saya</span></h4>
+                <p>Dihalaman ini adalah dokumen yang merangkum Biodata Web Devlopoer:</p>
+                <img src="image/i.jpg">
+            </div>
+
+            <div class="container">
+                <section class="section">
+                    <h2>Biografi Singkat</h2>
+                    <p>Nama : Ribal Hardiansyah</p>
+                    <a>Alamat : Jl. KUA</a>
+                    <p>Umur : 18 Tahun</p>
+                    <a>Saya adalah seorang profesional di bidang Teknik Informatika dengan latar belakang yang kuat dalam pengembangan perangkat lunak dan sistem informasi. Memiliki gelar Sarjana Teknik Informatika dari Universitas XYZ, saya telah mengasah keterampilan teknis dan pemecahan masalah melalui berbagai proyek dan pengalaman kerja.
+                        Selama lebih dari 4 tahun, saya telah bekerja sebagai Pengembang Perangkat Lunak di beberapa perusahaan terkemuka, di mana saya bertanggung jawab untuk merancang, mengembangkan, dan mengelola berbagai aplikasi berbasis web dan desktop. Keahlian saya mencakup pemrograman dalam berbagai bahasa seperti Java, Python, dan JavaScript, HTML, dan CSS serta pengalaman yang mendalam</a>
+                </section>
+        
+                <section class="section">
+                    <h2>Informasi Kontak</h2>
+                    <ul class="contact-info">
+                        <li>Email: RibalH@gmail.com</li>
+                        <li>Telepon: +62 8123 4567 8910</li>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/in">linkedin.com/in/ribal</a></li>
+                        <li>GitHub: <a href="https://github.com/ribal">github.com/ribal</a></li>
+                    </ul>
+                </section>
+        
+                <section class="section">
+                    <h2>Pengalaman Kerja</h2>
+                    <div class="experience">
+                        <h3>1. Web Developer Tiga Serangkai Tech, Jakarta</h3>
+                        <p><strong> Januari 2022 - Sekarang</strong></p>
+                        <p>Bertanggung jawab untuk Merancang, mengembangkan, dan memelihara situs web responsif menggunakan HTML, CSS, dan JavaScript.</p>
+                    </div>
+                    <div class="experience">
+                        <h3>2. Junior Web Developer Apotek Raja, Bandung</h3>
+                        <p><strong> Juni 2020 - Desember 2021</strong></p>
+                        <p>Mengembangkan aplikasi web menggunakan framework seperti React dan Angular. Membantu dalam perancangan dan pengembangan database menggunakan MySQL dan MariaDB.</p>
+                    </div>
+                </section>
+        
+                <section class="section">
+                    <h2>Pencapaian Individu</h2>
+                    <ul class="achievements">
+                        <li>Penghargaan Inovator Teknologi Terbaik : Diberikan untuk pencapaian luar biasa dalam menciptakan atau menerapkan solusi teknologi inovatif yang memecahkan masalah kompleks pada tahun 2021.</li>
+                        <li>Penghargaan Proyek TI Terbaik : Diberikan untuk keberhasilan dalam menyelesaikan proyek TI besar dengan dampak positif yang signifikan pada bisnis atau masyarakat pada tahun 2023.</li>
+                        <li>Penghargaan Keamanan Siber Terbaik : Dikenali untuk pencapaian dalam meningkatkan keamanan informasi dan perlindungan terhadap ancaman siber pada tahun 2023.</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+
+        <!-- Galeri-->
+        <section id="galeri">
+            <div class="wrapper">
+                <h4>Biodata <span>Saya</span></h4>
+                <p>Dihalaman ini adalah dokumen yang merangkum Biodata Web Design:</p>
+            </div>
+
+            <ul class="project-list">
+
+                <li class="project-item active" data-filter-item data-category="web development">
+                    <a href="#">
+                        <figure class="project-img">
+                            <div class="project-item-icon-box">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+                            <img src="image/f1.jpg" alt="Finance" loading="lazy">
+                        </figure>
+                        <h3 class="project-title">DataBase</h3>
+                        <p class="project-category">Web development</p>
+                    </a>
+                </li>
+            
+                <li class="project-item active" data-filter-item data-category="web development">
+                    <a href="#">
+                        <figure class="project-img">
+                            <div class="project-item-icon-box">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+                            <img src="image/f2.jpg" alt="Orizon" loading="lazy">
+                        </figure>
+                        <h3 class="project-title">Personal Website</h3>
+                        <p class="project-category">Web development</p>
+                    </a>
+                </li>
+            
+                <li class="project-item active" data-filter-item data-category="web design">
+                    <a href="#">
+                        <figure class="project-img">
+                            <div class="project-item-icon-box">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+                            <img src="image/f3.jpg" alt="Fundo" loading="lazy">
+                        </figure>
+                        <h3 class="project-title">Desainer Arsitektur Web</h3>
+                        <p class="project-category">Web design</p>
+                    </a>
+                </li>
+            
+                <li class="project-item active" data-filter-item data-category="applications">
+                    <a href="#">
+                        <figure class="project-img">
+                            <div class="project-item-icon-box">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+                            <img src="image/f4.jpg" alt="Brawlhalla" loading="lazy">
+                        </figure>
+                        <h3 class="project-title">Developer Website</h3>
+                        <p class="project-category">Web Design</p>
+                    </a>
+                </li>
+            
+                <li class="project-item active" data-filter-item data-category="web design">
+                    <a href="#">
+                        <figure class="project-img">
+                            <div class="project-item-icon-box">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+                            <img src="image/f5.jpg" alt="DSM" loading="lazy">
+                        </figure>
+                        <h3 class="project-title">Design Structure Matrix</h3>
+                        <p class="project-category">Web design</p>
+                    </a>
+                </li>
+            
+                <li class="project-item active" data-filter-item data-category="web design">
+                    <a href="#">
+                        <figure class="project-img">
+                            <div class="project-item-icon-box">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </div>
+                            <img src="image/f6.jpg" alt="MetaSpark" loading="lazy">
+                        </figure>
+                        <h3 class="project-title">Its Me </h3>
+                        <p class="project-category">Travelling</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </body>
+</html>

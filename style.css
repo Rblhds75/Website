@@ -1,0 +1,526 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    width: 1024px;
+    margin: auto;
+}
+
+/* Navigation */
+nav {
+    background-color: black;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.menu {
+    width: 50%;
+}
+
+.menu > ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.menu > ul > li > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo > img {
+    height: 70px;
+}
+
+/* Hero / Jumbotron */
+header {
+    background: url("image/bg-header.jpeg") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    letter-spacing: 5px;
+    text-shadow: 0 0 5px #000;
+}
+
+.header-opacity {
+    background-color: #212121;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-text > h3 {
+    color: #14FFEC;
+    font-size: 3.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.header-text > p,
+.header-text > h5 {
+    color: #fff;
+    margin: 0;
+    padding: 5px;
+}
+
+.header-text > h5 {
+    color: #14FFEC;
+    font-size: 3rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+}
+
+/* Button */
+.button {
+    background-color: #14FFEC;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Statistic */
+#statistic {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: #212121;
+    color: #fff;
+}
+
+#statistic > .wrapper {
+    padding: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#statistic > .wrapper > div {
+    text-align: center;
+}
+
+#statistic > .wrapper > div > p {
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+}
+
+#statistic > .wrapper > div > p > i {
+    margin-right: 10px;
+    font-size: 3rem;
+}
+
+#statistic > .wrapper > div > small {
+    font-size: 2rem;
+}
+
+/* Support System */
+#Support-System {
+    background-color: black;
+    color: #fff;
+}
+
+#Support-System > .wrapper {
+    padding: 50px 0px 50px 0px;
+}
+
+#Support-System > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+#Support-System > .wrapper > h4 > span {
+    color: #14FFEC;
+}
+
+#Support-System > .wrapper > p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+/* Grid Layout for Support System */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+
+.grid > .item {
+    border: 1px solid #14FFEC;
+    background-color: #212121;
+    border-radius: 5px;
+    position: relative;
+    padding: 30px;
+}
+
+.grid > .item > img {
+    width: 15%;
+}
+
+.grid > .item > .item-detail {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.grid > .item > .item-detail > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.grid > .item > .item-detail > div > small {
+    color: #ccc;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.grid > .item > .item-detail > div > a {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/* Resume */
+#Resume {
+    background-color: #323232;
+    color: white;
+}
+
+#Resume > .wrapper {
+    padding: 50px 0px 50px 0px;
+}
+
+#Resume > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+#Resume > .wrapper > h4 > span {
+    color: #fff;
+}
+
+#Resume > .wrapper > p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+/* Container for Resume Section */
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    padding: 5px;
+}
+
+.container > .item {
+    border: 1px solid #14FFEC;
+    background-color: black;
+    border-radius: 5px;
+    position: relative;
+    padding: 20px;
+}
+
+.container > .item > img {
+    width: 15%;
+}
+
+.container > .item > .item-detail {
+    font-size: 1rem;
+}
+
+.container > .item > .item-detail > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container > .item > .item-detail > div > small {
+    color: #ccc;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.container > .item > .item-detail > div > a {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/* Blog Pribadi */
+#Blog {
+    background-color: #14FFEC;
+    color: #323232;
+}
+
+#Blog > .wrapper {
+    padding: 50px 0px 50px 0px;
+}
+
+#Blog > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+#Blog > .wrapper > h4 > span {
+    color: black;
+}
+
+#Blog > .wrapper > p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section > h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Portofolio */
+#Portofolio {
+    background-color: black;
+    color:white;
+    padding: 20px 0;
+}
+
+#Portofolio > .wrapper {
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+}
+
+#Portofolio > .wrapper > h4 {
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+#Portofolio > .wrapper > h4 > span {
+    color: #14FFEC;
+}
+
+#Portofolio > .wrapper > p {
+    font-size: 1rem;
+    margin: 10px 0 30px;
+}
+
+/* Project */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Adjust gap between items */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.project-item {
+    flex: 1 1 calc(33.333% - 20px); /* Adjust percentage to control the number of items per row */
+    box-sizing: border-box;
+    border: 1px solid #14FFEC;
+    background-color: #212121;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden; /* Ensure content is clipped */
+}
+
+.project-item > a > p {
+    font-style: italic;
+}
+
+.project-img {
+    width: 90%;
+    height: 200px;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    position: relative;
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.project-item:hover .project-img img {
+    transform: scale(1.1); /* Zoom in the image */
+}
+
+.project-item-icon-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-item:hover .project-item-icon-box {
+    opacity: 1;
+}
+
+.project-title {
+    color: #14FFEC;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.project-category {
+    color: #ccc;
+    font-size: 1.2rem;
+}
+
+
+/* Informasi */
+#informasi {
+    background-color: black;
+    color: #fff;
+    padding: 20px; /* Optional: for adding padding around the section */
+}
+
+#informasi > .wrapper {
+    text-align: center; /* Center-aligns text and images inside the wrapper */
+}
+
+#informasi > .wrapper > h4 {
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+#informasi > .wrapper > h4 > span {
+    color: #14FFEC;
+}
+
+#informasi > .wrapper > p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+#informasi > .wrapper > img {
+    border-radius: 50%; /* Use 50% to create a perfect circle */
+    width: 180px;
+    height: 180px;
+    display: block; /* Ensures that image is treated as a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+.section {
+    border: 1px solid #14FFEC;
+    background: #323232;
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    margin-top: 0;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.experience, .achievements {
+    margin-bottom: 20px;
+}
+
+
+/* Galeri */
+#galeri {
+    background-color: black;
+    color: #fff;
+}
+
+#galeri > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+#galeri > .wrapper > h4 > span {
+    color: #14FFEC;
+}
+
+#galeri > .wrapper > p {
+    text-align: center;
+}
